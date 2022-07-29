@@ -1,0 +1,277 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
+
+@font-face{
+font-family: Lato;
+src: url('../fonts/sans-serif/lato-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: Opensans;
+src: url('../fonts/sans-serif/opensans-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: Roboto;
+src: url('../fonts/sans-serif/roboto-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: Montserrat;
+src: url('../fonts/sans-serif/montserrat-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: Josefins;
+src: url('../fonts/serif/josefinslab-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: Robotoslab;
+src: url('../fonts/serif/robotoslab-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: Rozhaone;
+src: url('../fonts/serif/rozhaone-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: Ultra;
+src: url('../fonts/serif/ultra-regular.ttf') format('truetype');
+font-weight: bold;
+font-style: bold;
+}
+
+
+aside {
+    width: 295px;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset .5px 0 .5px 0px #000000;
+	font-family:roboto;
+}
+
+
+.other {
+	border-left: solid;
+	border-left-color: black;
+}
+
+td {
+	vertical-align: top;
+}
+
+header
+{
+	padding-bottom:22px;
+}
+
+html {
+ font-family: opensans;
+}
+
+
+
+h1
+{
+transform: rotate(2deg);
+color: rgb(18, 9, 56);
+font-size: 3rem;
+text-align: center;
+text-shadow: rgb(3, 3, 3) 2px 3px 3px;
+}
+
+
+h2 {
+ font-family: Roboto;
+ font-size: 1.3rem;
+ letter-spacing: 0.125rem;
+}
+
+h3 {
+ font-family: Roboto;
+ font-size: 0.8rem;
+ letter-spacing: 0.125rem;
+}
+
+
+img {
+	float:left;
+	padding-right:10px;
+    width:100%;
+    max-width:10rem;
+}
+
+.expand {
+	font-size:3px;
+	font-decoration:none;
+}
+button {
+		background-color:#1F5368;
+	    border:none;
+		border-radius: 5px;
+        box-shadow: 2px 2px 4px #000000;
+		padding:10px;
+	    font-family:ultra;
+	    color:#fff;
+		font-size:20px;
+		text-transform: uppercase;
+			}
+
+
+.blog
+{
+	transform: rotate(-7deg);
+	text-transform: uppercase;
+	color:#000;
+	font-weight:700;
+	font-size:22px;
+	text-decoration: line-through;
+	text-decoration-line: line-through;
+	 outline: none;
+ display: inline-block;
+ width: 15%;
+ text-align: center;
+padding-top:22px;
+}
+
+
+
+.highlight {
+	text-transform: uppercase;
+	color:#fff;
+    font-size:3rem;
+	background-image: linear-gradient(to right, #111,teal,#111);
+ 	border-radius: 5px;
+	padding:5px;
+    margin: 0;
+    letter-spacing: .1rem;
+    text-shadow:.03rem .03rem .03rem #000;
+    font-family: Ultra;
+	src: url('../fonts/serif/ultra-regular.ttf');
+	font-weight:bold;
+    text-align:center;
+	}
+
+
+p{
+ font-size: .8rem;
+ letter-spacing: 0.031rem;
+ word-spacing: 0.125rem; 
+}
+
+time {
+ font-size: 0.75rem;
+ letter-spacing: 0.031rem;
+ word-spacing: 0.125rem;
+ font-style:italic;
+}
+
+/* Link Styling */
+
+link {
+ text-decoration: none;
+}
+a:link {
+ color: #33658A;
+}
+
+}
+
+table, tr {
+	padding-left:13px;
+	padding-right:13px;
+}
+
+/* Navigation Menu */
+
+nav {
+ border-top: solid;
+ border-bottom: solid;
+ border-bottom-width:thin;
+ border-top-width:thin;
+}
+nav a {
+ outline: none;
+ display: inline-block;
+ width: 15%;
+ text-align: center;
+padding-top:22px;
+ font-weight:500;
+ font-size: 1.7rem;
+ margin-bottom: 1.5rem;
+ text-decoration: none;
+
+
+	
+	
+/* Footer Styles */
+
+footer {
+ text-align: center;
+}
